@@ -13,8 +13,8 @@
 #container {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: grey; */
-    width: 785px;
+    max-width: 720px;
+    max-height: 720px;
     padding: 5px;
     margin: 5px;
     align-items: center;
@@ -26,9 +26,7 @@
 
 .grid {
     align-items: center;
-    border: 2px solid black;
+    box-sizing: border-box;
+    border: 1px solid black;
     padding: 0px;
-    /*  margin: 5px; */
-    height: 45px;
-    width: 45px;
 }

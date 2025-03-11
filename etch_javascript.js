@@ -12,6 +12,8 @@ function createGrid() {
     for (let i = 0; i < gridAmount * gridAmount; i++) {
         const grid = document.createElement("div");
         grid.classList.add("grid");
+        grid.style.width = (720/gridAmount) + 'px';
+        grid.style.height = (720/gridAmount) + 'px';
         container.appendChild(grid);
     }
 
