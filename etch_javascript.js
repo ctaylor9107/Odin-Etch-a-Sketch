@@ -31,11 +31,12 @@ createGrid();
 
 
 
-button.addEventListener('click', () => {
-    gridAmount = prompt("Input how many squares you would like the grid to be across and down.");
+button.addEventListener('click', function clickReset() {
+    gridAmount = prompt("Input how many squares you would like to be on each side of the grid.\nThe number must be 100 or less.");
     if (gridAmount > 100) {
-        gridAmount = prompt("Please input a value of 100 or less")
-    }
+        return alert("Error: the number must be 100 or less.");
+        }
+    
     else if (gridAmount <= 100) {
         let deleteGrid = document.querySelectorAll(".grid");
         deleteGrid.forEach((div) => {
